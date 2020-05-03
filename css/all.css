@@ -482,7 +482,7 @@ body {
 .sg-img::before{
     content: "";    
     position: absolute;
-    background-image: url(../images/15.png);
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/15.png);
     background-size: cover;
     top: 0;
     bottom: 0;
@@ -557,17 +557,17 @@ body {
     .optical h3 img{
         width: 32px;
         margin-right: 0.5rem;
-        content: url('/images/icon-diamond-white.svg')
+        content: url('https://rockalen.github.io/w3HomeWork/images/icon-diamond-white.svg')
      }
     .sunglasses h3 img{
         width: 32px;
         margin-right: 0.5rem;
-        content: url('/images/icon-sun-white.svg')
+        content: url('https://rockalen.github.io/w3HomeWork/images/icon-sun-white.svg')
      }
     .functional h3 img{
        width: 23px;
        margin-right: 0.5rem;
-       content: url('/images/icon-thunder-white.svg')
+       content: url('https://rockalen.github.io/w3HomeWork/images/icon-thunder-white.svg')
     }
 }
 
@@ -576,7 +576,7 @@ body {
     background-size: auto 2162px;
     display: flex;
     flex-direction: column;
-    background-image: url(../images/bg.png);
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/bg.png);
     background-repeat: no-repeat;
     background-position: center 0;
 }
@@ -693,12 +693,12 @@ body {
 }
 .joint-dgn-box-item1{
        
-    background-image: url(../images/product-8.png);
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/product-8.png);
     margin-right: 30px;    
 }
 
 .joint-dgn-box-item2{    
-    background-image: url(../images/product-9.png);    
+    background-image: url(https://rockalen.github.io/w3HomeWork/images/product-9.png);    
 }
 /* design聯名設計(平板) */
 @media (max-width:768px){
