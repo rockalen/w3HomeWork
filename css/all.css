@@ -213,6 +213,12 @@ body {
     html{
         font-size: 8px;
     }
+    .mb-1 {
+        margin-bottom: 0.25rem;
+    }
+    .mr-1 {
+        margin-right: 0.25rem;
+    }
     /* .fz-8{
         font-size: 2rem;
     } */
@@ -617,6 +623,10 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+.joint-dgn-phone-block{
+    display: none;
+}
 /* .joint-dgn-item5{
     
     margin-bottom: 8px;
@@ -732,7 +742,9 @@ body {
         margin-top: 32px;
         margin-bottom: 40px;
     }
-  
+    .joint-dgn-phone-block{
+        display: none;
+    }
     .joint-dgn-more{
         margin-top: 0;
     }
@@ -778,6 +790,9 @@ body {
 
 /* design聯名設計(手機) */
 @media (max-width:375px){
+    .joint-dgn{
+        max-width:327px;
+    }
     .joint-dgn-box{
         flex-wrap: wrap;
     }
@@ -785,11 +800,59 @@ body {
         max-width:100%;
         width: 100%;
     }
-
+    .joint-dgn-phone-block{
+        display: flex;
+        margin-bottom: 2px;
+    }
+    .box-hidden{
+        display: none;
+    }
+    .joint-dgn-col img{
+        max-width: 169px;
+    }
     .joint-dgn-box-item1{
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .joint-dgn-item4 img{
+        min-width: 156px;
+        max-height: 226px;
+    }
+    .joint-dgn-more{
+        justify-content: flex-start;
+    }
+    .joint-dgn-more span {
+        padding-left: 12px;
+        top: 34px;
+        left: 13px;
+        font-size: 26px;
+        line-height: 41px;
+        max-width: 124px;
+    }
+    .joint-dgn-p6 img{
+        max-width: 32px;
+        min-height:99px;
+    }
+
+    .joint-dgn-item7{
+        /* width: 76%; */
+    }
+    .joint-dgn-more div{
+        justify-content: flex-start;
+        /* align-items: center; */
+        height: 53px;
+        margin-top: 28px;
+    }
+    .joint-dgn-more div img{
+        
+        width: 102px;       
+    }
+    .joint-dgn-more span img{
+        margin-top: 0;
+        margin-left: 8px;
+        width: 18px;
+    }
+
 
 }
 .recommend-list{
@@ -920,9 +983,10 @@ label {
     background-color: #AA0601;
 }
 
-/*  */
+/* contact聯絡我們(平板) */
 @media (max-width:768px){
     .contact{
+        font-size: 16px;
         padding-bottom: 56px;
     }
     .contact-container{    
@@ -930,8 +994,8 @@ label {
     }
 
     .contact-container p{
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 16px;
+        line-height: 24px;
         margin-top: 1rem;
         margin-bottom: 0.875rem;
     }
@@ -942,6 +1006,39 @@ label {
         line-height: 36px;
     }
 }
+/* contact聯絡我們(手機) */
+@media (max-width:375px){
+    .contact{
+        padding-bottom: 6rem;
+    }
+    .contact-container{        
+        max-width:327px;
+    }
+
+    .contact-container p{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .contact-container label{
+        font-size: 2rem;
+        line-height: 21px;
+    }
+
+    .checkbox{
+        align-items: start;
+    }
+    .checkbox input{
+        margin-top: 0;
+    }
+
+    .frm-btn{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+/* footer */
 .footer{
     color: #ffffff;
     background-color: #aa0601;
@@ -1011,20 +1108,29 @@ label {
     line-height: 24px;
 }
 .policy{
+    width: 100%;
     display: flex;
-    line-height: 24;
+    justify-content: space-between;
+    line-height: 24px;
+
+}
+.policy li:first-child {
+    width: 82%;
 }
 .policy a{
     display: block;
     font-size: 14px;
     line-height: 21px;    
 }
-.policy li:first-child a{   
-   margin-right: 62px;
+.policy li:last-child a{   
+   margin-left: 62px;
 }
 
 /* footer 頁尾區塊(平板) */
 @media (max-width:768px){
+    .footer{
+        font-size: 16px;
+    }
     .ft-main-menu a {
         padding: 0 20px;
     }
@@ -1059,12 +1165,86 @@ label {
     .copyright img{
         display: none;
     }
-
-    .policy li:first-child a{
-        margin-right: 24px;
+    .policy li:first-child {
+        width: 77%;
+    }
+    .policy li:last-child a{
+        margin-left: 24px;
     }
    
     .ft-end{
         padding-bottom: 40px;
     }
+}
+
+/* (手機) */
+
+@media (max-width:375px){
+    .ft-main-menu{
+        display: none;
+    }
+    .ft-phone-bar{
+        padding-top: 3.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        /* align-items: center; */
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 3rem;
+    }
+
+    .footer-bar{        
+        padding-top: 0;
+    }
+    .call li{
+        font-size: 2rem;
+    }
+    .call li:first-child{
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .call li img{
+        width: 13px;
+    }
+    .call li:first-child img{
+        margin-right: 1rem;        
+    }
+    .call li:last-child{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .copyright img{
+        display: flex;
+        width: 46px;
+        margin-right: 0;
+    }
+
+    .ft-end{
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin-top: 16px;
+        padding-bottom: 20px;
+    }
+    .ft-end div{
+        /* display: flex; */
+       
+    }
+
+    .policy{
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .policy li{
+        margin-bottom: 8px;
+    }
+    .policy li:first-child {
+        width: 100%;
+    }
+    .policy li:last-child a{
+        margin-left: 0;
+    }
+    
+    
 }
