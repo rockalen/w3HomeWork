@@ -243,6 +243,9 @@ body {
     }
 }
 /* header2020 早春系列(PC) */
+.ham-icon {
+    display: none;
+}
 .header{
     background-color: #AA06010D;
 }
@@ -303,6 +306,9 @@ body {
 } */
 /* header2020 早春系列(平板) */
 @media (max-width:768px){
+    .ham-icon {
+        display: none;
+    }
     .menu{
         padding-left: 48px;
         padding-right: 38px;
@@ -332,10 +338,15 @@ body {
         justify-content: center;
         align-items: center;
     }
+    .logo{
+        width: 48px;
+    }
     .ham-icon {
+        display: flex;
         position: absolute;
         left: 13px;
         color: #FFFFFF;
+        font-size: 24px;
     }
 
     .navbar {
@@ -350,7 +361,7 @@ body {
     }
 
     .navbar.active {
-        max-height: 200px;
+        max-height: 244px;
     }
     .navbar{
         /* display: flex; */
@@ -361,12 +372,22 @@ body {
         background: #AA0601;
         color: #FFFFFF;
         border-top: 1px solid #FFFFFF;
-        padding: 16px 0;
+        padding: 15px 0;
+        margin: 0;
         text-decoration: none;
     }
     .navbar li a:hover {
         background: #8f0400;
     }
+    .banner{
+        height: 394px;
+    }
+    .banner-bg{
+        border-image: url(https://rockalen.github.io/w3HomeWork/images/banner-phone.png);
+        background-size: cover;
+        /* background-position: left 0; */
+    }
+
     .banner p{
         font-size: 16px;
     }
