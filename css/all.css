@@ -279,7 +279,7 @@ body {
 }
 
 .banner-bg{   
-    background-image: url(../images/banner.png);
+    background-image: url(/images/banner.png);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -312,7 +312,7 @@ body {
         line-height: 30px;
     }
     .banner-bg{
-        background-image: url(../images/68.png);
+        background-image: url(/images/68.png);
        
     }
     .navbar li a{
