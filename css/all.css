@@ -383,7 +383,7 @@ body {
         height: 394px;
     }
     .banner-bg{
-        border-image: url(https://rockalen.github.io/w3HomeWork/images/banner-phone.png);
+        background-image: url(https://rockalen.github.io/w3HomeWork/images/banner-phone.png);
         background-size: cover;
         /* background-position: left 0; */
     }
